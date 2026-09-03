@@ -1,16 +1,6 @@
 {
-  "name":"xldv-2026-web-complete",
-  "version":"1.0.0",
+  "name":"xldv-2026-free-long-term",
   "private":true,
-  "scripts":{"start":"node server.js"},
-  "dependencies":{
-    "bcryptjs":"^3.0.2",
-    "cors":"^2.8.5",
-    "dotenv":"^16.6.1",
-    "exceljs":"^4.4.0",
-    "express":"^5.1.0",
-    "jsonwebtoken":"^9.0.2",
-    "multer":"^2.0.2",
-    "pg":"^8.16.3"
-  }
+  "scripts":{"dev":"wrangler pages dev public --d1=XLDV_DB","deploy":"wrangler pages deploy public"},
+  "devDependencies":{"wrangler":"^4.30.0"}
 }

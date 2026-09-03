@@ -1,0 +1,8 @@
+name = "xldv-2026-free"
+compatibility_date = "2026-09-01"
+pages_build_output_dir = "public"
+
+[[d1_databases]]
+binding = "XLDV_DB"
+database_name = "XLDV_DB"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
