@@ -1,0 +1,38 @@
+XLDV 2026 - BAN CHAY DON GIAN TREN WINDOWS
+==========================================
+
+1. Cai Docker Desktop:
+   https://www.docker.com/products/docker-desktop/
+
+2. Mo Docker Desktop va cho den khi Docker chay.
+
+3. Giai nen thu muc XLDV_2026_Web_Simple vao may.
+
+4. Double-click file:
+   START_XLDV.bat
+
+5. Cho he thong khoi dong. Trinh duyet se tu mo:
+   http://localhost:4000
+
+TAI KHOAN THU:
+- Admin: admin / admin123
+- BGH:   bgh / bgh123
+- DHSPKT: dhspkt / dhspkt123
+- DHSP:   dhsp / dhsp123
+- DHKT:   dhkt / dhkt123
+- DHBK:   dhbk / dhbk123
+- DHCNTT: dhcntt / dhcntt123
+
+DUNG HE THONG:
+- Double-click STOP_XLDV.bat
+
+NEU BI LOI:
+- Double-click XEM_LOI.bat
+- Gui lai noi dung man hinh cho nguoi phu trach.
+
+DU LIEU:
+- Excel mau nam trong thu muc data.
+- Du lieu van hanh duoc luu trong PostgreSQL/Docker volume.
+- Khong xoa volume neu chua sao luu du lieu.
+
+Luu y: ban nay dung Docker Desktop de giu viec cai dat don gian va on dinh.

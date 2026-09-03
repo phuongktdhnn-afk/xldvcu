@@ -1,0 +1,28 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: xldv
+      POSTGRES_USER: xldv
+      POSTGRES_PASSWORD: xldv_secret_change_me
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL","pg_isready -U xldv -d xldv"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+  app:
+    build: .
+    environment:
+      PORT: 4000
+      DATABASE_URL: postgres://xldv:xldv_secret_change_me@postgres:5432/xldv
+      JWT_SECRET: change-this-in-production
+      SEED_EXCEL: /app/data/Bo_bieu_mau_du_lieu_XLDV_DHNN.xlsx
+    ports:
+      - "4000:4000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+volumes:
+  pgdata:
