@@ -5,4 +5,4 @@ pages_build_output_dir = "public"
 [[d1_databases]]
 binding = "XLDV_DB"
 database_name = "XLDV_DB"
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_id = "18f52bd3-8646-495c-830d-36d2803d2627"
